@@ -14,6 +14,7 @@ struct Person {
 	int weight;
 };
 
+
 struct Person *Person_create(char *name, int age, int height, int weight)
 {
 	struct Person *who = malloc(sizeof(struct Person));
@@ -53,7 +54,7 @@ int main(int argc, char *argv[])
 	printf(" Frank is at memory location %p: \n", frank);
 	Person_print(frank);
 
-	joe->age += 20;
+	joe->age += 60;
 	joe->height -= 2;
 	joe->weight += 40;
 	Person_print(joe);
